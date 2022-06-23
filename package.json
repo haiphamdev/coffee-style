@@ -11,6 +11,7 @@
   "author": "HaiPham",
   "license": "ISC",
   "devDependencies": {
+    "@kamona/tailwindcss-perspective": "^0.1.1",
     "live-server": "^1.2.2",
     "tailwindcss": "^3.1.4"
   }
