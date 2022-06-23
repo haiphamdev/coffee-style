@@ -25,7 +25,7 @@
 }
 
 .ct-subheadline {
-  @apply flex justify-center items-center mb-24;
+  @apply flex justify-center items-center my-16;
 }
 
 .ct-subheadline-deco-line {
@@ -38,4 +38,33 @@
 
 .ct-button {
   @apply text-center uppercase tracking-wider py-4 px-8 text-[13px] font-semibold cursor-pointer hover:opacity-95;
+}
+
+#root {
+  @apply h-full overflow-x-hidden overflow-y-auto perspective-2;
+}
+
+.ct-parallax,
+.ct-no-parallax {
+  @apply flex items-center justify-center relative flex-col;
+}
+
+.ct-parallax {
+  @apply h-[40vh];
+}
+
+.ct-no-parallax {
+  @apply h-auto z-[999] bg-white;
+}
+
+.ct-parallax-image {
+  @apply absolute w-full h-full -z-[1] bg-cover bg-center bg-fixed;
+}
+
+@media screen(xl) {
+  .ct-parallax {
+    @apply h-[70vh] transform-style-3d;
+  }
+  .ct-parallax-image {
+  }
 }

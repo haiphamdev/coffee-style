@@ -1,6 +1,7 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
+  mode: "jit",
   content: ["./public/**/*.{html,js}"],
   theme: {
     screens: {
@@ -38,5 +39,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@kamona/tailwindcss-perspective")],
 };
